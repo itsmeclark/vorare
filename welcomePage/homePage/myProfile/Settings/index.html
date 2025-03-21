@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/edcced4a53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p><button onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>Settings</p>
+    </header>
+    <div id="popUp">
+        <p>Are you sure you want to delete your Account?</p>
+        <p>Input the password below</p>
+        <input type="text" id="password"><br>
+        <button id="submitPass" style="background-color: lime;">submit</button>
+        <button id="cancelDelete" style="background-color: red;">cancel</button>
+    </div>
+    <p class="label">My Account</p>
+    <ul>
+        <li>Account <i class="fa-solid fa-greater-than"></i></li>
+        <li>Address <i class="fa-solid fa-greater-than"></i></li>
+        <li>Following <i class="fa-solid fa-greater-than"></i></li>
+        <li>My likes <i class="fa-solid fa-greater-than"></i></li>
+    </ul>
+    <p class="label">Settings</p>
+    <ul>
+        <li>Location <i class="fa-solid fa-greater-than"></i></li>
+        <li>Blocked User <i class="fa-solid fa-greater-than"></i></li>
+        <li>Currency <i class="fa-solid fa-greater-than"></i></li>
+    </ul>
+    <p class="label">Support</p>
+    <ul>
+        <li>Terms & Conditions <i class="fa-solid fa-greater-than"></i></li>
+        <li>Rating & Feedback <i class="fa-solid fa-greater-than"></i></li>
+        <li>About VORARE <i class="fa-solid fa-greater-than"></i></li>
+    </ul>
+    <button id="deleteAccount">DELETE ACCOUNT</button>
+    <script src="main.js"></script>
+</body>
+</html>

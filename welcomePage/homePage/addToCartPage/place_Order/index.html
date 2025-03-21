@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+<header>
+  <a href="/Vorare/welcomePage/homePage/addToCartPage/index.html">
+    <button onclick="goBack()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo-2"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
+    </button>
+  </a>
+  <p>Checkout</p>
+</header>
+<div class="container">
+    <nav id="displayItems">
+      
+    </nav>
+    <nav class="totalItems">
+      <p class="totalText">Total :</p>
+      <p id="displayTotal">&#8369;0</p>
+    </nav>
+    <nav class="shopVoucher">
+      <p>Shop Voucher</p>
+      <p class="selectVoucher">Select</p>
+    </nav>
+    <nav class="shippingOption">
+      <p style="font-size: 14px;">Shipping   Option</p>
+      <p style="font-weight: bold;">Standard   local</p>
+      <p class="shippingPrice">&#8369;60</p>
+    </nav>
+    <nav class="totalProducts">
+      <p id="totalProducts">Order Total (0 items): </p>
+      <p class="priceProducts">&#8369;299</p>
+    </nav>
+    <nav class="platformVoucher">
+      <p>Platform Voucher</p>
+      <p class="platformSelect">Select</p>
+    </nav>
+    <nav class='paymentOption'>
+      <p>Payment Option</p>
+      <p class="selectOption">Cash on Delivery</p>
+    </nav>
+    <div class="paymentDetails">
+      <h4>Payment Details</h4>
+      <p>Product Total</p>
+      <p class="productTotal">&#8369;299</p><br>
+      <p>Shipping Total</p>
+      <p class="shippingTotal">&#8369;60</p><br>
+      <p>Platform Voucher</p>
+      <p class="voucher">40% OFF</p><br>
+      <p class="totalPrice">Total Payments</p>
+      <p class="total">&#8369;299</p>
+    </div>
+</div>
+<nav class="bottom-nav">
+  <p class='totalPayment'>Total Payment :</p>
+  <p id="totalPayment">&#8369;0</p>
+  <button id="placeOrder">Place Order</button>
+</nav>
+<div class="bgcontainer">
+  <div class="containerItems">
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>

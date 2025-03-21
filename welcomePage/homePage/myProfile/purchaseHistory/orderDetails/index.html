@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+<header>
+    <button onclick="goBack()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo-2"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
+    </button>
+  <p>Order Details</p>
+</header>
+<div class="container">
+    <div class="orderDate">
+      <p>Pending Payment</p>
+      <p>Waiting for the seller to ship out<br> the product(s)</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+    </div>
+    <div class="deliveryAddress">
+      <p class="deliveryHeader"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Delivery Address</p>
+      <p class="userName">Clark Gwapo</p>
+      <p class="contactNumber">(+63)09123456789</p>
+      <p class="userAddress">Cebu, Cebu City, Inayawan</p>
+    </div>
+    <nav id="displayItems">
+      
+    </nav>
+    <nav class="totalItems">
+      <p class="totalText">Total :</p>
+      <p id="displayTotal">&#8369;0</p>
+    </nav>
+    
+    <nav class="shippingOption">
+      <p style="font-size: 14px;">Shipping   Option</p>
+      <p style="font-weight: bold;">Standard   local</p>
+      <p class="shippingPrice">&#8369;60</p>
+    </nav>
+    <nav class="totalProducts">
+      <p id="totalProducts">Order Total (0 items): </p>
+      <p class="priceProducts">&#8369;299</p>
+    </nav>
+    
+    <div class="paymentDetails">
+      <h4>Payment Details</h4>
+      <p>Product Total</p>
+      <p class="productTotal">&#8369;299</p><br>
+      <p>Shipping Total</p>
+      <p class="shippingTotal">&#8369;60</p><br>
+      <p>Platform Voucher</p>
+      <p class="voucher">40% OFF</p><br>
+      <p class="totalPrice">Total Payments</p>
+      <p class="total">&#8369;299</p>
+    </div>
+</div>
+
+<div class="bgcontainer">
+  <div class="containerItems">
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>

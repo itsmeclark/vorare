@@ -1,0 +1,167 @@
+
+@media only screen and (width >= 400px){
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .signUpContainer {
+        position: relative;
+        top: 50px;
+    }
+    .caption, p,button, .labelPassword, .labelEmail, a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .caption {
+        font-size: 40px;
+    }
+    p {
+        color: black;
+        position: relative;
+        bottom: 20px;
+    }
+    #email, #password,#accoutName {
+        width: 330px;
+        height: 40px;
+        padding: 0px 10px 0 10px;
+        margin: 10px;
+        border-radius: 5px;
+        outline: none;
+        font-size: 20px;
+        border: solid 1px gray;
+        position: relative;
+        bottom: 15px;
+    }
+    #password {
+       width: 270px;
+       padding-right: 70px;
+    }
+    .container nav {
+      width: 370px;
+      height: 40px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .container nav svg {
+      width: 25px;
+      height: 25px;
+    }
+    .container nav div {
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      width: 60px;
+      height: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border-left: solid 1px gray;
+    }
+    button {
+        border: solid 1px #15f5ba;
+        background-color: black;
+        width: 300px;
+        height: 45px;
+        border-radius: 40px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nameLabel {
+        position: relative;
+        right: 145px;
+        font-size: 20px;
+        bottom: 2px;
+    }
+    .labelPassword {
+        position: relative;
+        right: 125px;
+        font-size: 20px;
+        bottom: 2px;
+    }
+    .labelEmail {
+        position: relative;
+        right: 148px;
+        font-size: 20px;
+        bottom: 2px;
+    }
+    #alreadyAcc {
+        text-decoration: none;
+        color: blue;
+        position: relative;
+        top: 20px;
+        font-size: 18px;
+    }
+    #termsPrivacy {
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    hr {
+        width: 350px;
+        color: gainsboro;
+        position: relative;
+        top: 5px;
+    }
+    #userPin {
+      position: absolute;
+      top: 150px;
+      border: solid 2px #15f5ba;
+      width: 370px;
+      height: 450px;
+      left: 20px;
+      background-color: white;
+      display: none;
+    }
+    #userPin input {
+      width: 20px;
+      padding: 0 15px 0 15px;
+      height: 50px;
+      font-size: 25px;
+      border-radius: 5px;
+      border: solid 2px gainsboro;
+      outline: none;
+    }
+    #userPin input[type = "number"]:focus {
+      border: solid 2px #15f5ba;
+    }
+    #userPin :nth-child(1) {
+      position: relative;
+      top: 10px;
+    }
+    #userPin :nth-child(7) {
+      position: relative;
+      top: 30px;
+      color: gray;
+      font-size: 15px;
+    }
+    #userPin :nth-child(8) {
+      position: relative;
+      top: 50px;
+    }
+    #userPin :nth-child(9) {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: white;
+      border: solid 1px white;
+      width: 25px;
+      height: 25px;
+      color: black;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    #userPin :nth-child(9) svg {
+      width: 100%;
+      height: 100%;
+      border: solid 1px white;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      color: orangered;
+    } 
+}

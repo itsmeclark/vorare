@@ -1,0 +1,105 @@
+
+@media only screen and (width >= 400px){
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .loginContainer {
+        position: relative;
+        top: 50px;
+    }
+    .caption, p,button, .labelPassword, .labelEmail, a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .caption {
+        font-size: 40px;
+    }
+    p {
+        color: black;
+        position: relative;
+        bottom: 20px;
+    }
+    #email, #password {
+        width: 330px;
+        height: 40px;
+        padding: 0px 10px 0 10px;
+        margin: 10px;
+        border-radius: 5px;
+        outline: none;
+        font-size: 20px;
+        border: solid 1px gray;
+        position: relative;
+        bottom: 15px;
+    }
+    #password {
+      width: 270px;
+      padding-right: 70px;
+    }
+    .container nav {
+      width: 370px;
+      height: 40px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .container nav svg {
+      width: 25px;
+      height: 25px;
+    }
+    .container nav div {
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      width: 60px;
+      height: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border-left: solid 1px gray;
+    }
+    button {
+        border: solid 1px #15f5ba;
+        background-color: black;
+        width: 300px;
+        height: 45px;
+        border-radius: 40px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+    }
+    .labelPassword {
+        position: relative;
+        right: 125px;
+        font-size: 20px;
+        bottom: 2px;
+    }
+    .labelEmail {
+        position: relative;
+        right: 147px;
+        font-size: 20px;
+        bottom: 2px;
+    }
+    #createAcc {
+        text-decoration: none;
+        color: blue;
+        position: relative;
+        top: 40px;
+        font-size: 18px;
+    }
+    hr {
+        width: 350px;
+        color: gainsboro;
+        position: relative;
+        top: 20px;
+    }
+    #forgotPass {
+        position: relative;
+        bottom: 20px;
+        color: blue;
+        text-decoration: none;
+    }
+
+}

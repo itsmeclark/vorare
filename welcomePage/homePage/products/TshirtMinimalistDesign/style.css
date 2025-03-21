@@ -1,0 +1,635 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+   padding: 0;
+   margin: 0;
+  
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  position: relative;
+}
+.product-price {
+  font-size: 20px;
+  margin: 5px 0 15px 5px;
+  color: orangered;
+  font-weight: bold;
+}
+.product-name {
+  margin: 0 0 0 5px;
+}
+.productRating-Sold {
+  position: relative;
+  top: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px gainsboro;
+}
+.product-rating, .product-sold {
+  display: inline;
+}
+.product-rating {
+  padding-right: 15px;
+}
+.product-sold {
+  padding-left: 10px;
+}
+#shipping {
+  border: solid 1px gainsboro;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+#shipping i {
+  color: lightgray;
+  position: relative;
+  font-size: 25px;
+  left: 380px;
+  bottom: 32px;
+}
+.shippingDetails {
+  color: gray;
+  position: relative;
+  bottom: 5px;
+  font-size: 14px;
+  
+}
+#shipping .shippingPrice {
+  color: orangered;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+.shippingFee, .shippingDetails {
+  padding-left: 5px;
+}
+#shipping .shippingFee {
+  display: inline;
+  font-size: 16px;
+}
+#shippingPopUp {
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 888;
+  bottom: 0;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px -5px 10px darkgray;
+  background-color: gainsboro;
+ transform: translateY(100%);
+ display: none;
+}
+#shippingPopUp button {
+  font-size: 20px;
+  color: dimgray;
+  position: absolute;
+  border: solid 1px white;
+  border-radius: 0px 30px 0 0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0px 0 0;
+  right: 10px;
+}
+#shippingPopUp .shippingHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+}
+.shippingHead p {
+  font-weight: bold;
+}
+#shippingPopUp .information {
+  border-top: solid 1px gainsboro;
+} 
+.information .ShippingLocation {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.ShippingLocation p {
+  margin: 0 0 0 10px;
+  font-size: 15px;
+}
+.ShippingLocation .location {
+  position: absolute;
+  right: 20px;
+  color: gray;
+}
+.shippingFee, .shippingPrice {
+  margin: 7px 0 0 0;
+}
+.standardFee {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.standardFee p:nth-child(1) {
+  font-weight: bold;
+  margin: 10px;
+}
+.standardFee p:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  font-size: 15px;
+  margin: 5px;
+  color: orangered;
+  font-weight: bold;
+}
+.shippingOff {
+  background-color: white;
+  height: 200px;
+}
+.shippingOff p {
+  padding: 0 0 0 10px;
+}
+#productOwner {
+  border: solid 1px gainsboro;
+  width: 100%;
+  height: 60px;
+}
+#productOwner img {
+  background-color: gray;
+  border: solid 1px gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px 10px 10px 10px;
+  display: inline;
+}
+#productOwner button {
+  position: absolute;
+  right: 0px;
+  border: solid 2px #15f5ba;
+  background-color: white;
+  color: #15f5ba;
+  padding: 5px;
+  margin: 15px 10px 20px 0px;
+}
+.shopName, .locationShop{
+  display: inline-block;
+  position: absolute;
+  margin: 10px 0 0 0;
+  font-size: 15px;
+}
+.locationShop {
+  margin: 25px 0 0 2px;
+  font-size: 13px;
+  color: darkgray;
+}
+.product-description {
+  border: solid 1px gainsboro;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+.product-description i {
+  color: lightgray;
+  position: relative;
+  font-size: 25px;
+  left: 380px;
+  bottom: 32px;
+}
+.product-description .heading-description {
+  margin: 5px 0 0 5px;
+  font-size: 16px;
+}
+.product-description .seeMore {
+  font-size: 14px;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 0;
+  color: gray;
+  position: relative;
+  bottom: 5px;
+}
+#description {
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 888;
+  bottom: 0;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px -5px 10px darkgray;
+  transform: translateY(100%);
+  display: none;
+}
+#description p {
+  margin: 10px 0 10px 20px;
+  font-size: 18px;
+}
+#description #closeDescription {
+  font-size: 20px;
+  color: dimgray;
+  position: absolute;
+  border: solid 1px white;
+  border-radius: 0px 30px 0 0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 0 0;
+  right: 15px;
+}
+.insideDescription {
+  width: 100%;
+  overflow-x: none;
+  overflow-y: scroll;
+  height: 300px;
+}
+.insideDescription p {
+  color: dimgray;
+}
+.insideDescription .lastText {
+  padding: 0 0 50px 0;
+}
+#addToCart{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#addToCart i {
+  font-size: 25px;
+}
+#displayAddToCart {
+  box-shadow: 0px -5px 10px darkgray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow-y: hidden;
+  height: 450px;
+  z-index: 250;
+  background-color: white;
+  transform: translateY(100%);
+  display: none;
+  overflow: scroll;
+}
+#displayAddToCart nav {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 250;
+  background-color: whitesmoke;
+}
+#addToCartNow {
+  position: sticky;
+  left: 15px;
+  bottom: 10px;
+  margin: 5px;
+  z-index: 250;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  width: 90%;
+  height: 40px;
+  display: none;
+}
+#Buynow {
+  position: absolute;
+  left: 15px;
+  margin: 5px;
+  z-index: 250;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  width: 90%;
+  height: 40px;
+  display: none;
+}
+#closeCart {
+  font-size: 20px;
+  color: dimgray;
+  position: absolute;
+  right: 5px;
+  border: solid 1px white;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 0 0;
+  z-index: 999;
+  cursor: pointer;
+}
+.product-variant {
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 120px 120px 120px;
+  gap: 10px;
+  width: 100%;
+  border-bottom: solid 1px gainsboro;
+  position: relative;
+  padding-bottom: 80px;
+  
+}
+.product-variant div {
+  border: solid 2px gainsboro;
+  position: relative;
+  top: 70px;
+  left: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.product-variant div div{
+  width: 30px;
+  border: solid 1px #15f5ba;
+  position: absolute;
+  background-color: #15f5ba;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  border-radius: 5px 0px 1000% 5px;
+  display: none;
+}
+.product-variant div div svg {
+  color: white;
+}
+.product-variant h4 {
+  position: absolute;
+  margin: 20px 0 0 10px;
+  font-size: 20px;
+}
+.product-variant div img {
+  width: 40px;
+  height: 42px;
+  margin: 2px;
+  background-color: gray;
+  display: inline;
+}
+.product-variant div p {
+  display: inline;
+  position: relative;
+  bottom: 15px;
+  right: 5px;
+  font-size: 10px;
+}
+.product-quantity {
+  position: relative;
+  padding-bottom: 100px;
+}
+.product-quantity h4 {
+  margin: 10px 0 0 10px;
+  font-size: 20px;
+}
+.product-quantity p {
+  padding: 0px 20px 2px 20px;
+  outline: none;
+  margin: 0;
+  border-radius: none;
+  border: solid 1px #15f5ba;
+  text-align: center;
+  display: inline;
+}
+.product-quantity button {
+  width: 40px;
+  height: 24px;
+  background-color: white;
+  font-size: 15px;
+  border: solid 1px #15f5ba;
+  color: #15f5ba;
+}
+.product-quantity div {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+.product-quantity #reduceQuantity {
+  position: relative;
+  left: 5px;
+}
+.product-quantity #addQuantity {
+  position: relative;
+  right: 5px;
+}
+#buyNow {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  border: solid 1px #15f5ba;
+  background-color: #15f5ba;
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  height: 50px;
+  
+}
+#mainImg {
+  background-color: grey;
+  width: 420px;
+  height: 370px;
+  position: relative;
+  z-index: 100;
+}
+#productImg {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-rows: 80px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  gap: 4px;
+  position: relative;
+  left: 5px;
+}
+.variant {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+.variants {
+  margin: 5px;
+  font-size: 13px; 
+}
+#returnHome {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border: solid 1px transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 200;
+  font-size: 20px;
+}
+#heartBtn {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border: solid 1px transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 100px;
+  z-index: 200;
+  font-size: 20px;
+}
+#cartBtn {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border: solid 1px transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 50px;
+  z-index: 200;
+  font-size: 20px;
+}
+#threeDots {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border: solid 1px transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  z-index: 200;
+  font-size: 20px;
+}
+.product-reviews {
+  border-top: solid 1px gainsboro;
+  width: 100%;
+  height: 300px;
+  margin: 0 0 100px 0;
+}
+.product-reviews p {
+  font-size: 15px;
+  margin: 5px;
+}
+.reviews {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews img {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  filter: opacity(50%);
+  border: solid 1px white;
+}
+.reviews p {
+  color: gray;
+}
+#displaySuccess {
+  position: fixed;
+  top: 200px;
+  z-index: 9999;
+  width: 200px;
+  height: 150px;
+  margin: 100px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.363);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+}
+#displaySuccess svg{
+  color: lawngreen;
+  width: 100px;
+  height: 100px;
+}
+#displaySuccess p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.transparentBG {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 249;
+  top: 0px;
+  display: none;
+}
+.product-size {
+  width: 100%;
+  height: 100px;
+  border-bottom: solid 1px gainsboro;
+  position: relative;
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 80px 80px 80px;
+  gap: 10px;
+}
+.product-size h4 {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  font-size: 20px;
+}
+.product-size div {
+  border: solid 1px gainsboro;
+  align-content: center;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+  border-radius: 5px;
+}
+.product-size :nth-child(4){
+  font-size: 13px;
+}
+.product-size div {
+  border: solid 2px gainsboro;
+  position: relative;
+  left: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.product-size div div{
+  width: 25px;
+  border: solid 1px #15f5ba;
+  position: absolute;
+  background-color: #15f5ba;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  border-radius: 5px 0px 1000% 5px;
+  display: none;
+}
+.product-size div div svg {
+  color: white;
+}
